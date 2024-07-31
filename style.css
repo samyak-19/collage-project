@@ -1,0 +1,2297 @@
+/* === Google Font Image - Poppins === */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap'); 
+*{
+     margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    font-family: 'Poppins',sans-serif;
+ }
+ .link
+ {
+    text-decoration: none;
+ }
+ 
+/* ======================================================= HOME PAGE =========================================================== */
+ 
+/* ============== FirstDivHomePage ============== */
+
+ .container_first_div_homepage
+{
+    height: 700px;
+    width: 100%;
+}
+ .main_first_div_homepage
+{
+    height: 700px;
+    width: 100%;
+    display: flex;
+}
+.headtext_homepage
+{
+    position: absolute;
+    top: 1%;
+    left: 68%;
+    z-index: 1000;  
+    color: #fff;
+    margin: 10px;
+    text-decoration: none;
+}
+.headtext_homepage p
+{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.headtext_homepage p:hover
+{
+    color: #1a6ed8;
+}
+
+.first_div_one_div_homepage
+{
+    height: 700px;
+    width: 100%;
+    position: absolute;
+    background: #000000;
+}
+.first_div_one_div_homepage img
+{
+    height: 700px;
+    width: 100%;
+}
+.first_div_two_div_homepage
+{
+    height: 700px;
+    width: 100%;
+    position: absolute;
+    transform-origin: left top;
+    transform: rotatey(50deg);
+    perspective: 5000px;
+    overflow: hidden;
+}
+.first_div_two_div_homepage:before
+{
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 185%;
+    top: 0;
+    left: 0;
+    transform-origin: left top;
+    background-color: aqua;
+    transform: rotateY(50deg);
+    background-image: url(./images/background/IMG-20230207-WA0008.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    object-fit: cover;
+    box-shadow: 70px 30px 70px 20px black;
+    border-top-right-radius: 1%;
+    border-bottom-right-radius: 1%;
+}
+.content_first_div_homepage
+{    
+    position: absolute;
+    z-index: 50;
+    transform-origin: left top;
+    transform: rotateY(35deg);
+    left: 5%;
+    top: 20%;
+}
+.content_first_div_h2_homepage
+{
+    position: relative;
+    font-size: 12vw;
+    color: #252839;
+    -webkit-text-stroke: 0.3vw #383d52;
+    font-family: 'Times New Roman', Times, serif;
+}
+.content_first_div_h2_homepage::before
+{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: chartreuse;
+    -webkit-text-stroke: 0vw #383d52;
+    /* border-right: 2px solid #fe5101; */
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+}
+@keyframes animate
+{
+    0%,10%,100%
+    {
+        width: 0;
+    }
+    70%,90%
+    {
+        width: 100%;
+    }
+}
+.img_first_div_homepage
+{
+    opacity: 0.7;
+}
+
+
+ /* ============== Second Div Home Page =============== */
+
+ .container_second_div_homepage
+ {
+     height: 700px;
+     width: 100%;
+ }
+  .main_second_div_homepage
+ {
+     height: 700px;
+     width: 100%; 
+     display: flex;
+     /* background: #fff; */
+ }
+ .second_div_one_div_homepage .second_div_img_homepage
+ {
+     position: relative;
+     height: 550px;
+     width: 560px;
+     top: 70px;
+     left: 150px;
+     box-shadow: 20px 20px 20px 1px black;
+ }
+ .second_div_two_div_homepage
+ {
+     height: 600px;
+     width: 700;
+     background:#fff;
+     position: relative;
+     top: 50px;
+     left: 240px; 
+ }
+ .second_div_two_div_homepage .second_div_header_homepage
+ {
+     position: relative;
+     left: 30px;
+     top: 25px;
+     font-size: 50px;
+ }
+ .second_div_two_div_homepage .second_div_paragraph_homepage
+ {
+     position: relative;
+     padding: 4%;
+     top: 30px;
+     width: 100%;
+     text-align: justify;
+     font-size: 1.0vw;
+     font-family: 'Times New Roman', Times, serif;
+     
+ }
+ 
+ 
+ 
+ 
+/* ============================ ThirdDivHomePAge ========================== */
+
+ .container_third_div_homepage
+{
+    height: 700px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f2f2f2;
+    position: relative;
+    background: gainsboro;
+}
+.container_third_div_homepage::before
+{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #ff676d;
+    clip-path: inset(47% 0 0 0);
+    z-index: -1;
+}
+ .container_third_div_homepage .container_card_third_div_homepage
+{
+    overflow-x: hidden;
+    max-width: 2000px;
+    width: 100%;
+    padding: 80px 0;
+    overflow: hidden;
+} 
+.container_card_third_div_homepage .main_card_third_div_homepage
+{
+    width: 200%;
+    display: flex;
+    justify-content: space-evenly;
+    transition: all 1s ease;
+}
+#two:checked ~ .main_card_third_div_homepage
+{
+    margin-left: -100%;
+}
+.main_card_third_div_homepage .cards_third_div_homepage
+{
+    
+    width: calc(100% / 2 - 10px);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.card_third_div_homepage
+{
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    background-color:#fff;
+    position: relative;
+    margin: 70px;
+    transition: all 0.4s ease;
+}
+.card_third_div_homepage:hover
+{
+    transform: translateY(50px);
+}
+.card_content_third_div_homepage img
+{
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    border-style: double;
+    border-color: #fff;
+    position: relative;
+}
+.even_div_name_third_div_homepage
+{
+    position: relative;
+    top: -400px;
+    text-align: center;
+    font-size: 40px; 
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff; 
+    font-size: 0;
+    transition: 0.5s;
+    z-index: 5;
+    height: 100%;
+    padding-top: 47%;
+    border-radius: 100%;
+}
+.even_div_name_third_div_homepage:hover
+{
+    font-size: 50px;
+}
+.third_div_button_homepage
+{
+    position: relative;
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+    
+}
+.third_div_button_homepage label
+{
+    height: 15px;
+    width: 15px;
+    background: black;
+    margin: 0 4px;
+    border-radius: 20px;
+    transition: all 0.5s ease;
+}
+.third_div_button_homepage label.active
+{
+    width: 35px;
+}
+#one:checked ~ .third_div_button_homepage label.one
+{
+    width: 35px;
+}
+#two:checked ~ .third_div_button_homepage label.two
+{
+    width: 35px;
+}
+#two:checked ~ .third_div_button_homepage label.one
+{
+    width: 15px;
+}
+#one:checked ~ .third_div_button_homepage label.two
+{
+    width: 15px;
+}
+
+input[type="radio"]
+{
+    display: none;
+} 
+
+
+/* ============== Four Div Home page   =============== */
+.container_four_div_homepage
+{
+   height: 700px;
+   width: 100%;
+   background-color: black;
+}
+
+
+ /* ============== Five Div Home page   =============== */
+ .container_five_div_homepage
+ {
+    height: 700px;
+    width: 100%;
+    background: url(./images/background/midnight.jpg); 
+}
+.content_four_div_homepage video
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+
+.main_container_five_div_homepage
+ {
+    height: 700px;
+    width: 100%;
+    display: flex;
+ }
+ .five_div_cardone_homepage
+ {
+    height: 300px;
+    width: 200px;
+    background-color: aqua;
+    position: relative;
+    border-radius: 25px;
+    top: 100px;
+    left: 120px;
+    transition: all 0.4s ease;
+ }
+ .five_div_cardone_homepage:hover
+ {
+        transform: translateY(50px);
+ }
+ .five_div_cardtwo_homepage
+ {
+    height: 300px;
+    width: 200px;
+    background-color: aqua;
+    position: relative;
+    border-radius: 25px;
+    top: 300px;
+    left: 160px;
+    transition: all 0.4s ease;
+ }
+ .five_div_cardtwo_homepage:hover
+ {
+        transform: translateY(-50px);
+ }
+ .five_div_cardthree_homepage
+ {
+    height: 300px;
+    width: 200px;
+    background-color: aqua;
+    position: relative;
+    border-radius: 25px;
+    top: 100px;
+    left: 210px;
+    transition: all 0.4s ease;
+ }
+ .five_div_cardthree_homepage:hover
+ {
+        transform: translateY(50px);
+ }
+ .five_div_cardfour_homepage
+ {
+    height: 300px;
+    width: 200px;
+    background-color: aqua;
+    position: relative;
+    border-radius: 25px;
+    top: 300px;
+    left: 260px;
+    transition: all 0.4s ease;
+ }
+ .five_div_cardfour_homepage:hover
+ {
+        transform: translateY(-50px);
+ }
+ .five_div_cardfive_homepage
+ {
+    height: 300px;
+    width: 200px;
+    background-color: aqua;
+    position: relative;
+    border-radius: 25px;
+    top: 100px;
+    left: 310px;
+    transition: all 0.4s ease;
+ }
+ .five_div_cardfive_homepage:hover
+ {
+        transform: translateY(50px);
+ }
+ .five_div_cardsix_homepage
+ {
+    height: 300px;
+    width: 200px;
+    background-color: aqua;
+    position: relative;
+    border-radius: 25px;
+    top: 300px;
+    left: 360px;
+    transition: all 0.4s ease;
+ }
+ .five_div_cardsix_homepage:hover
+ {
+        transform: translateY(-50px);
+ }
+ .five_div_cardcontent_homepage img
+ {
+    height: 300px;
+    width: 200px;
+    border-radius: 25px;
+    border-style: double;
+    border-color: #fff; 
+ }
+ .five_div_name_homepage
+ {
+    position: absolute;
+    font-size: 20px;
+    top: 230px;
+    color: #252839;
+    -webkit-text-stroke: 0.1vw #383d52;
+ }
+ .five_div_name_homepage::before
+ {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: #fe7701;
+    -webkit-text-stroke: 0vw #383d52;
+    border-right: 2px solid #fe0101;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+}
+.see_more_five_div_homepage 
+{
+    position: relative;
+    top: 670px;
+    font-size: 1.1vw;
+    color: #fff;
+    left: 48%;
+    transition: 0.4s;
+}
+.see_more_five_div_homepage:hover
+{
+    color: blue;
+}
+
+/* ======================== Six Div Home Page ======================= */
+
+.six_div_container_homepage
+{
+    height: 800px;
+    width: 100%;
+    background: #252839;
+    z-index: -1;
+}
+.main_sixdiv_container_homepage
+{
+    height: 700px;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+.six_div_content_homepage
+{
+    color:#fff ;
+}
+.six_div_p1_homepage
+{
+    width: 90%;
+    font-size: 1.0vw;
+    position: relative;
+   text-align:left;
+   left: 5%;
+   top: 80px;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.six_div_p2_homepage
+{
+    font-size: 1.5vw;
+    text-align: center;
+    position: relative;
+    top: 150px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.six_div_p3_homepage
+{
+    font-size: 1.5vw;
+    text-align: center;
+    position: relative;
+    top: 160px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.six_div_p4_homepage
+{
+    font-size: 1.5vw;
+    text-align: center;
+    position:relative ;
+    top: 170px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.six_div_media_icons_homepage
+{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 200px;
+    opacity: 1.0;
+}
+.six_div_icons_homepage
+{
+    position: relative;
+    display: flex;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    background: #fff;
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    box-shadow: 5px 10px 20px rgba(150, 150,150, .3);
+}
+.six_div_icons_homepage .fa-facebook-f
+{
+    color: #1a6ed8;
+}
+.six_div_icons_homepage .fa-twitter
+{
+    color: #1DA1F2;
+}
+.six_div_icons_homepage .fa-instagram
+{
+    color: #d34242;
+}
+.six_div_icons_homepage .fa-youtube
+{
+    color: #FE0000;
+}
+
+
+/* ================================================================ Event_Catagery Page ============================================================================= */
+
+
+ /* ============== First Div Even Categories Page ============== */
+ 
+ .container_first_div_evencategoriespage
+{
+    height: 700px;
+    width: 100%;
+}
+.home_first_div
+{
+    position: relative;
+    left: 1500px;
+    top: 50px;
+    font-size: 1.1vw;
+    color:#fff;
+}
+.headtext_homepage
+{
+    position: relative;
+    top: 1%;
+    left: 68%;
+    z-index: 1000;  
+    color: #fff;
+    margin: 10px;
+    text-decoration: none;
+}
+.headtext_homepage p
+{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.headtext_homepage p:hover
+{
+    color: #1a6ed8;
+}
+
+ .main_first_div_evencategoriespage
+{
+    height: 700px;
+    width: 100%;
+    display: flex;
+}
+.first_div_one_div_evencategoriespage
+{
+    height: 700px;
+    width: 100%;
+    position: absolute;
+    background: #000000;
+}
+.first_div_one_div_evencategoriespage img
+{
+    height: 700px;
+    width: 100%;
+}
+.first_div_two_div_evencategoriespage
+{
+    height: 700px;
+    width: 100%;
+    position: absolute;
+    transform-origin: left top;
+    transform: rotatey(50deg);
+    perspective: 5000px;
+    overflow: hidden;
+}
+.first_div_two_div_evencategoriespage:before
+{
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 185%;
+    top: 0;
+    left: 0;
+    transform-origin: left top;
+    background-color: aqua;
+    transform: rotateY(50deg);
+    background-image: url(./images/background/IMG-20230207-WA0008.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    object-fit: cover;
+    box-shadow: 70px 30px 70px 20px black;
+    border-top-right-radius: 1%;
+    border-bottom-right-radius: 1%;
+}
+.content_first_div_evencategoriespage
+{    
+    position: absolute;
+    z-index: 50;
+    transform-origin: left top;
+    transform: rotateY(35deg);
+    left: 5%;
+    top: 20%;
+}
+.content_first_div_h2_evencategoriespage
+{
+    position: relative;
+    font-size: 12vw;
+    color: #252839;
+    -webkit-text-stroke: 0.3vw #383d52;
+    font-family: 'Times New Roman', Times, serif;
+}
+.content_first_div_h2_evencategoriespage::before
+{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: chartreuse;
+    -webkit-text-stroke: 0vw #383d52;
+    /* border-right: 2px solid #fe5101; */
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+}
+@keyframes animate
+{
+    0%,10%,100%
+    {
+        width: 0;
+    }
+    70%,90%
+    {
+        width: 100%;
+    }
+}
+.first_div_img_evencategoriespage
+{
+    opacity: 0.7;
+}
+
+/* ============== Second Div Even Categories Page ============= */
+
+.container_seconddiv_evencategoriespage
+{
+    height: auto;
+    width: 100%;
+}
+.main_seconddiv_evencategoriespage
+{
+    height: auto;
+    width: 100%;
+    background: gainsboro;
+    margin-bottom: -150px;
+}
+.second_div_categories_evencategoriespage
+{
+    height: auto;
+    width: 100%;
+    padding-bottom: 15%;
+}
+
+.second_div_headname_categories_evencategoriespage
+{
+    position: relative;
+    font-size: 50px;
+    color: black;
+    top: 20px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+.second_div_categories_card_evencategoriespage
+{
+    position: relative;
+    top: 100px;
+    height: 350px;
+    width: 80%;
+    background: #8f8b8b;
+    border-radius: 50px;
+    left:10%;
+    /* margin: 100px 0px 150px 0px; */
+    margin-bottom: 70px;
+    bottom: 50px;
+}
+.second_div_categories_card_evencategoriespage img
+{
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+    /* object-fit: cover; */
+}
+.second_div_even_name_evencategoriespage
+{
+    position: relative;
+    top: -400px;
+    text-align: center;
+    font-size: 40px; 
+    color: #fff; 
+    font-size: 0;
+    transition: 0.5s;
+    z-index: 5;
+    height: 100%;
+    padding-top: 17%;
+    border-radius: 100%;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+}
+.second_div_even_name_evencategoriespage:hover
+{
+    font-size: 50px;
+} 
+/* =================== Third Div Even Categories Page ==================== */
+
+.container_thirddiv_evencategoriespage---
+{
+    height: 750px;
+    width: 100%;
+}
+.main_thirddiv_evencategoriespage
+{
+    height: 100%;
+    width: 100%;
+    background: #000000;
+}
+.main_thirddiv_evencategoriespage img
+{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+/* ==================================================================== Business Categories Page  ================================================================= */
+
+
+.container_businesscategoriespage
+{
+    width: 100%;
+    height: auto;
+}
+
+.onediv_businesscategoriespage
+{
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    background-color: black;
+    margin-bottom: 5%;
+}
+.heading_textfirstdiv_businesscategorispage
+{
+    font-size: 50px;
+    margin: 1%;
+    position: absolute;
+    color: white;
+}
+.discription_firstdiv_businesscategoriespage
+{
+    width: 70%;
+    padding-left: 25%;
+    padding-top: 5%;
+    font-size: large; 
+    position: absolute;
+    text-align: justify;
+    color:white;
+    border: 2%;
+}
+.firstdiv_backgroundimg_businesscategoriespage
+{
+    width: 100%;
+    height: 600px;
+    background-color: rgb(8, 8, 8);
+    /* opacity: 0.5; */
+    
+}
+.seconddiv_businesscategoriespage
+{
+    
+    height: auto;
+    position: relative;
+    width: 90%;
+    left: 5%;
+    display: flex;
+    gap: 100px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.cards_businesscategoriespage
+{
+    width: 250px;
+    height: 400px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0px 0px 20px 5px black;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-top: 2%;
+}
+.card_img_businesscategoriespage
+{
+    width: 100%;
+    height: 400px;
+    opacity: 0.4;
+}
+.businessname_businesscategoriespage
+{
+    position: relative;
+    top: -100px;
+    text-align: center;
+    color: aliceblue;
+    font-size: 30px;
+}
+.business_ratiing_businesscategoriespage
+{
+    position: relative;
+    top: -106%;
+    right: -3%;
+    text-align: right;
+    padding-right:10%;
+    color: white;
+    font-size: 30px;
+}
+.starratiing_image
+{
+    position: relative;
+    top: -465px;
+    left: 145px;
+    width: 40px;
+    height: 40px;
+    opacity: 1;
+}
+.thirddiv_businesscategoriespage
+{
+    margin-top: 8%;
+    height: 70%;
+    width: 100%;
+    background-color: aqua;
+}
+.thirddiv_businesscategoriespage img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+/* ================================================================ LOGIN PAGE =======================================================================================*/
+
+
+.conatainer_loginpage
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.background_image_loginpage
+{
+ position: relative;
+ width: 50%;
+ height: 100%;
+}
+.background_image_loginpage:before
+{
+     content:''; 
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.background_image_loginpage img
+{
+    position: absolute;
+    top: 0;
+    Left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.content_loginpage
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+.form_loginpage 
+{
+    width: 50%;
+}
+.form_loginpage h2
+{
+    color: #D49137;
+    font-weight: 600;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    border-bottom: 4px solid #ff4584;
+    display: inline-block;
+    letter-spacing: 1px;
+}
+.input_loginpage 
+{
+    margin-bottom: 20px;
+}
+.input_loginpage span
+{
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: inline-block;
+    color: maroon;
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+.input_loginpage input
+{
+    width: 100%;
+    padding: 10px 20px;
+    outline: none;
+    font-weight: 400;
+    border: 1px solid #800000;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #800000;
+    background: transparent;
+    border-radius: 30px;
+}
+.input_loginpage input[type="submit"]
+{
+    background:#ff4584;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+.input_loginpage input[type="submit"]:hover
+{
+    background: #f53677;
+}
+.remember_loginpage
+{
+    margin-bottom: 10px;
+    color: #800000;
+    font-weight: 400;
+    font-size: 14px;
+}
+.input_loginpage p
+{
+    color: #607d8b;
+}
+.input_loginpage p a
+{
+    color:#ff4584;
+    transition: 0.4s;
+}
+ @media (max-width: 768px)
+{ 
+.background_image_loginpage
+{
+position: absolute;
+top: 0;
+Left: 0;
+width: 100%;
+height: 100%;
+}
+.content_loginpage
+{
+
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: 100%;
+z-index: 1;
+}
+.form_loginpage {
+width: 100%;
+padding: 40px;
+background: rgb(255 255 255 / 0.9);
+margin: 50px;
+}
+.form_loginpage h3
+ { 
+color: #607d8b;
+text-align: center;
+font-weight: 500;
+ }
+}
+
+
+
+
+
+
+
+/* =========================================================================== Registration Page =====================================================================*/
+
+
+.Containerdiv_registrationpage
+{
+  background: url(./images/background/b2.jpg);
+  background-size: cover;
+  font-family: arial;
+  color: chocolate;
+  font-size: 13px;
+  margin: 0;
+}
+input, select, button
+{
+    font-family: arial;
+    color: chocolate;
+    font-size: 14px;
+}
+h3,h4
+{
+    margin: 0;
+}
+img
+{
+    max-width: 100%;
+}
+:focus{
+    outline: none;
+}
+.wrapper_registrationpage
+{
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.inner_registrationpage
+{
+    padding: 20px;
+    background: #fff;
+    max-width: 850px;
+    margin: auto;
+    display: flex;
+}
+.inner_registrationpage .image-holder_registrationpage
+{
+    width: 50%;
+}
+.image-holder_registrationpage .img_registationpage1
+{
+    width: 100%;
+    height:50% ;
+}
+.image-holder_registrationpage .img_registationpage2
+{
+    width: 100%;
+    height: 50%;
+}
+.inner_registrationpage form
+{
+    width: 50%;
+    padding-top: 36px;
+    padding-left: 45px;
+    padding-right: 45px;
+}
+.inner_registrationpage h3
+{
+    text-transform: uppercase;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 28px;
+}
+.form_registration_group_registration
+{
+    display: flex;
+}
+.form_registration_group_registration input
+{
+    width: 50%;
+}
+.form_registration_group_registration input:first-child
+{
+    margin-right: 25px;
+}
+.form_registration-wrapper_registrationpage
+{
+    position: relative;
+}
+.form_registration-wrapper_registrationpage span
+{
+    color: grey;
+}
+.form_registration-wrapper_registrationpage input
+{
+    color: grey;
+}
+.form_registration-wrapper_registrationpage select
+{
+    color: grey;
+}
+.form_registration_control_registration select
+{
+    color: grey;
+}
+.form_registration_control_registration
+{
+    border: none;
+    border-bottom: 1px solid rgba(210, 105, 30, 0.1);
+    display: block;
+    width: 100%;
+    height: 30px;
+    padding-right: 0;
+    margin-bottom: 25px;
+}
+select
+{
+    cursor: pointer;
+    color: chocolate ;
+}
+select option[value=""][disabled]
+{
+    display: none;
+}
+button 
+{
+    border: none;
+    width: 164px;
+    height: 51px;
+    margin: auto;
+    margin-top: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
+    background: #333;
+    font-size: 15px;
+    color: coral;
+}
+button:hover
+{
+    background: antiquewhite;
+}
+ @media (max-width: 767px)
+{ 
+.inner_registrationpage
+{
+display: block;
+}
+.inner_registrationpage .image-holder_registrationpage
+{
+    width: 100%;
+}
+.inner_registrationpage form
+{
+   width: 100px;
+   padding: 40px 0 30px;
+}
+button
+{
+    margin-top: 60px;
+}
+}
+
+
+/* ========================================================================= ADD BUSINESS PAGE ===================================================================== */
+.container_addbusinesspage
+{
+  background: url(./images/background/sea.jpg);
+  background-size: cover;
+  font-family: arial;
+  color: chocolate;
+  font-size: 13px;
+  margin: 0;
+}
+input, select, button
+{
+    font-family: arial;
+    color: chocolate;
+    font-size: 14px;
+}
+h3,h4
+{
+    margin: 0;
+}
+img
+{
+    max-width: 100%;
+}
+:focus{
+    outline: none;
+}
+.wrapper_addbusinesspage
+{
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.inner_addbusinesspage
+{
+    padding: 20px;
+    background: #fff;
+    max-width: 850px;
+    margin: auto;
+    display: flex;
+}
+.inner_addbusinesspage .image-holder_addbusinesspage
+{
+    width: 50%;
+}
+.image-holder_addbusinesspage .img_businesspage1
+{
+    width: 100%;
+    height:50% ;
+}
+.image-holder_addbusinesspage .img_businesspage2
+{
+    width: 100%;
+    height: 50%;
+}
+.inner_addbusinesspage form
+{
+    width: 50%;
+    padding-top: 36px;
+    padding-left: 45px;
+    padding-right: 45px;
+}
+.inner_addbusinesspage h3
+{
+    text-transform: uppercase;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 28px;
+}
+.form-group_addbusinesspage
+{
+    display: flex;
+}
+.form-group_addbusinesspage input
+{
+    width: 100%;
+}
+.form-group_addbusinesspage input:first-child
+{
+    margin-right: 25px;
+}
+.form-wrapper_addbusinesspage
+{
+    position: relative;
+}
+.addbusiness_event_categories
+{
+    font-family: system-ui, '-apple-system, BlinkMacSystemFont', 'Segoe UI', 'Roboto','Oxygen','Ubuntu','Cantarell','Open Sans','Helvetica Neue','sans-serif';
+    color: grey;
+    margin-top: 32%;
+
+}
+.multi_selector_addbusinesspage
+{
+    position: absolute;
+    width: max-content;
+    z-index: 1000;
+    top: -10px;
+}
+.select_field_addbusinesspage
+{
+    border: 1px solid rgb(187, 187, 187);
+}
+.form-control_addbusinesspage select
+{
+    color: grey;
+}
+.file_input_label p
+{
+    color: grey;
+}
+.select_field_addbusinesspage,.task_addbusinesspage,.list_addbusinesspage
+{
+    width: 100%;
+    background-color: white;
+    padding: 0.3rem;
+}
+.input_selector_addbusinesspage
+{
+    outline: none;
+    border: none;
+}
+.down_arrow_addbusinesspage
+{
+    font-size: 1.2rem;
+    display: inline-block;
+    transition: 0.2s linear;
+    cursor: pointer;
+}
+.list_addbusinesspage
+{
+    box-shadow: 0 30PX 60PX rgb(0, 0, 0,0.2);
+    display: none;
+}
+.task_addbusinesspage
+{
+    display: block;
+    padding-left: 0;
+}
+.show
+{
+    display: block;
+}
+.rotate180
+{
+    transform: rotate(180deg);
+}
+
+
+
+
+
+
+.form-control_addbusinesspage
+{
+    border: none;
+    border-bottom: 1px solid rgba(210, 105, 30, 0.1);
+    display: block;
+    width: 100%;
+    height: 30px;
+    padding-right: 0;
+    margin-bottom: 25px;
+}
+select
+{
+    cursor: pointer;
+    color: chocolate ;
+    
+}
+select option[value=""][disabled]
+{
+    display: none;
+}
+button 
+{
+    border: none;
+    width: 164px;
+    height: 51px;
+    margin: auto;
+    margin-top: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
+    background: #333;
+    font-size: 15px;
+    color: coral;
+}
+button:hover
+{
+    background: antiquewhite;
+}
+ @media (max-width: 767px)
+{ 
+.inner_addbusinesspage
+{
+display: block;
+}
+.inner_addbusinesspage .image-holder_addbusinesspage
+{
+    width: 100%;
+}
+.inner_addbusinesspage form
+{
+   width: 100px;
+   padding: 40px 0 30px;
+}
+button
+{
+    margin-top: 60px;
+}
+}
+
+.file_input
+{
+    position: relative;
+    z-index: 10;
+    opacity: 0;
+    background-color: greenyellow;
+    width: 100%;
+    height: 150px;
+    border-radius: 35px;
+    cursor: pointer;
+    border-radius: 25px;
+
+}
+.file_input_label
+{
+    position: absolute;
+    transform: translate(0%,-100%);
+    z-index: 5;
+    width: 22%;
+    height: 150px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 35px;
+    border-radius: 25px;
+    border: 4px dashed black;
+
+}
+.file_input_label p
+{
+    text-align: center;
+    font-size: 20px;
+    padding-top: 15%;
+}
+.aaa
+{
+    margin-top: 10%;
+    position: relative;
+    left: -1%;
+    resize: none;
+    width: 100%;
+    height: 100px;
+    padding: 2%;
+}
+/* ====================================================================== Profile Div ================================================================================ */
+
+.Conatainer_profilepage
+{
+    width: 100%;
+    background: linear-gradient(149.67deg, #0CFADD 0%, rgba(202, 34, 230, 0.2) 82.11%);
+}
+.background_img_profile_div1_profilepage
+{
+    width: 100%;
+    height: 60%;
+    background-color: black;
+}
+.background_img_profile_div1_profilepage img
+{
+    position: absolute;
+    width: 100%;
+    height: 60%;
+}
+.profile_img_div_profilepage
+{
+    position: absolute;
+    width: 314px;
+    height: 303px;
+    transform: translate(220%,-60%);
+    background-color: red;
+    border-radius: 50%;
+}
+.profile_img_div_profilepage img
+{
+    width: 100%;
+    height: 303PX;
+    border-radius: 50%;
+}
+.profile_content_profilepage
+{
+    position: relative;
+    width: 60%;
+    margin-top: 10%;
+    margin-left: 25%;
+    margin-right: 20%;
+    text-align: center;
+    /* background-color: #0CFADD; */
+}
+.profile_left_name_profilepage
+{
+    height: auto;
+    width: 100%; 
+    /* background-color: #800000; */
+    position: relative;
+    margin-top: 2%;
+    font-size: 30px;
+    flex-wrap: wrap;
+    text-align: center;
+    left: -7%;
+}
+.profile_right_name_profilename
+{
+    height: auto;
+    width:auto;
+    /* background-color:red; */
+    position: relative;
+    font-size: 30px;
+    flex-wrap: wrap;
+    margin-top: 1%;
+}
+.profile_content_profilepage button
+{
+    height: 10%;
+    width: 25%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 48px;
+    text-align: center;
+    background-color: blue;
+    border-radius: 20px;
+    margin-top: 8%;
+    margin-left: 30%;
+}
+.profile_Edit_button button
+{
+    height: 3%;
+    width: 6%;
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 15px;
+    text-align: center;
+    color: #000000;
+    background-color:blue;
+    position: absolute;
+    left: 93%;
+    top: 60%;
+    border-radius: 10px;
+}
+
+hr
+{
+    margin-top: 5%;
+}
+.Business_profile_img_div_profilepage
+{
+    width: 250px;
+    height: 330px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0px 0px 20px 5px black;
+    border-radius: 15px;
+    overflow: hidden;
+   transform: translate(290%);  
+   margin-top: 4%; 
+}
+.Business_profile_img_div_profilepage img 
+{
+    width: 100%;
+    height: 330px; 
+}
+.Business_profile_content_profilepage
+{
+    position: relative;
+    width: 70%;
+    margin-top: 2%;
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: center;
+    /* background-color: #0CFADD; */
+
+    
+}
+.Business_profile_content_profilepage h3
+{
+    
+    height: auto;
+    position: relative;
+    z-index: 6;
+    font-size: 50px;  
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+}
+.Business_profile_left_name_profilepage
+{
+    
+    height: auto;
+    width: 100%;
+    /* background-color:red; */
+    position: relative;
+    font-size: 30px;
+    flex-wrap: wrap;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.Business_profile_right_name_profilename
+{
+    height: auto;
+    width: 100%;
+    position: relative;
+    /* background-color: #800000; */
+    font-size: 30px;
+    flex-wrap: wrap;
+    margin-top: 2%; 
+    margin-bottom: 2%; 
+}
+.Businessprofile_Edit_button button
+{
+     height: 3%;
+    width: 6%;
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 15px;
+    text-align: center;
+    color: #000000;
+    background-color:blue;
+    position: absolute;
+    left: 93%;
+    top: 140%;
+    border-radius: 10px;
+}
+.Business_added_images_profilepage
+{
+    position: relative;
+    width: 90%;
+    background: linear-gradient(108.92deg, rgba(20, 0, 255, 0.5508) 30.63%, rgba(255, 0, 214, 0.2312) 55.9%, rgba(216, 26, 247, 0.68) 76.14%);
+    flex-wrap: wrap;
+    display: flex;
+    gap: 20px;
+    left: 5%;
+    justify-content: center;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.Business_add_image_profilepage
+{
+    
+    margin: 2%;
+    width: 250px;
+    height: 230px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0px 0px 20px 5px black;
+    border-radius: 15px;
+    overflow: hidden;   
+}
+.Business_add_image_profilepage img 
+{
+    width: 100%;
+    height: 230px ;
+}
+.Business_profile_decription_profilepage
+{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 39px;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 2%;
+    text-align: justify;
+}
+/* =================================================== Business Detail Page ================================================================== */
+.businessdetailpage
+{
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    background: linear-gradient(135deg, #EF1818 0%, rgba(136, 22, 225, 0.38) 55.88%, rgba(214, 102, 21, 0.89) 100%);
+}
+/* ======================= First Div Busines Daitel Page ======================= */
+.firstdiv_businessdetailpage
+{
+   height: 100%; 
+   width: 100%;
+   display: flex;
+}
+/* ================== One div of Business Detail page ================= */
+.one_div_businessdetailpage
+{
+    height: auto;
+    width: 60%;
+}
+.onediv_firstdiv_businessdetailpage
+{
+    position: relative;
+    top: 10%;
+    display: flex;
+}
+.firstdiv_imagediv_businessdetailpage
+{
+    position: relative;
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    top: -70;
+}
+.firstdiv_imagediv_businessdetailpage img
+{
+    height: 350px;
+    width: 270px;
+    border-radius: 50%;
+    margin-left: 6%;
+    margin-top: 10%;
+    box-shadow: 0px 0px 20px 5px #0b0b0b ;
+    object-fit: cover;
+}
+.firstdiv_textdiv_businessdetailpage
+{
+    width: 50%;
+    position: relative;
+    left: 2%;
+    top: -70;
+}
+.firstdiv_textdiv_businessdetailpage p
+{
+    color: black;
+    font-size: 25px; 
+    font-weight: 700;
+    position: relative;
+    width: 137%;
+    margin-top: 6%;
+    padding-left: 10%; 
+    margin-left: 5%;
+}
+.firstdiv_textdiv_businessdetailpage button
+{
+    width: 12%;
+    border-radius: 40%;
+    overflow: hidden;
+    margin-left: 70%;
+    margin-top: -18%; 
+}
+.firstdiv_textdiv_businessdetailpage img
+{
+    width: 100%;
+    height: 60px;
+    border-radius: 40%;
+    overflow: hidden; 
+}
+.firstdiv_textdiv_businessdetailpage span
+{
+    font-weight: 500;
+    font-size: 20px;
+    font-weight: 10px;
+}
+.firstdiv_textdiv_businessdetailpage h1
+{
+    color: #fff;
+    font-size: 50px;
+    position: relative;
+    width: 150%;
+    padding-left: 10%;
+}
+.firstdiv_textdiv_businessdetailpage h6
+{
+    color: #fff;
+    font-size: 15px;
+    position: relative;
+    width: 150%;
+    margin-top: 0%;
+    padding-left: 10%;
+}
+.onediv_firstdiv_description_businessdetailpage
+{
+    margin-top: 6%;
+    Padding-top: 10%;
+    margin-left: 5%;
+    text-align: justify;
+    width: 90%;
+    font-size: 18px;
+    height: auto;
+}
+.onediv_firstdiv_description_businessdetailpage p
+{
+    width: 90%;
+}
+/* ============= two div of first div bussiness detail page  ============== */
+.twodiv_businessdetailpage
+{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_slider_businessdetailpage
+{
+    width: 100%;
+    height: 70%;
+    margin-top: 2%;
+     margin-bottom: 25%;
+    border-radius: 10px 0px 0px 10px;
+    justify-content: center;
+    overflow: hidden;
+    background-color: black;
+    box-shadow: 0px 0px 20px 5px black; 
+    object-fit: cover; 
+}
+.sliders_businessdetailpage
+{
+    width: 500%;
+    height: 100%;
+    display: flex;
+}
+.sliders_businessdetailpage input
+{
+    display: none;
+}
+.slide_businessdetailpage
+{
+    width: 20%;
+    transition: 2s;
+}
+
+.slide_businessdetailpage img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* ========== css for manual slide navigation =========== */
+.navigation-manual_businessdetailpage
+{
+   height: auto;
+    position: absolute;
+    width: 800px;
+    margin-top: -40;
+    display: flex;
+    justify-content: center;
+}
+.manual-btn_businessdetailpage
+{
+    border: 2px solid  #40d3dc; 
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.manual-btn_businessdetailpage:not(:last-child)
+{
+    margin-right: 40px;
+}
+.manual-btn_businessdetailpage:hover
+{
+    background: #40d3dc;
+}
+#radio1:checked ~ .first_businessdetailpage
+{
+    margin-left: 0;
+}
+#radio2:checked ~ .first_businessdetailpage
+{
+    margin-left: -20%;
+}
+#radio3:checked ~ .first_businessdetailpage
+{
+    margin-left: -40%;
+}
+#radio4:checked ~ .first_businessdetailpage
+{
+    margin-left: -60%;
+}
+
+.navigation-auto_businessdetailpage
+{
+    height: auto;
+    position: absolute;
+    display: flex;
+    width: 800px;  
+    justify-content: center;
+    margin-top: 540px;
+}
+.navigation-auto_businessdetailpage div
+{
+    border: 2px solid red;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+.navigation-auto_businessdetailpage div:not(:last-child)
+{
+    margin-right: 40px;
+}
+
+
+#radio1:checked ~ .navigation-auto_businessdetailpage .auto-btm1_businessdetailpage
+{
+    background-color: #40d3dc;
+}
+#radio2:checked ~ .navigation-auto .auto-btm2_businessdetailpage
+{
+    background-color: #40d3dc;
+}
+#radio3:checked ~ .navigation-auto .auto-btm3_businessdetailpage
+{
+    background-color: #40d3dc;
+}
+#radio4:checked ~ .navigation-auto .auto-btm4_businessdetailpage
+{
+    background-color: #40d3dc;
+}
+.six_div_media_icons_homepage_businessdetailpage
+{
+    width: 90%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 80%;
+}
+.six_div_icons_homepage_businessdetailpage
+{
+    position: relative;
+    display: flex;
+    width: 80px;
+    height: 80px;
+    border-radius: 100px;
+    background: #fff;
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    box-shadow: 5px 10px 20px rgba(150, 150,150, .3);
+}
+.six_div_icons_homepage_businessdetailpage .fa-facebook-f
+{
+    color: #1a6ed8;
+}
+.six_div_icons_homepage_businessdetailpage .fa-twitter
+{
+    color: #1DA1F2;
+}
+.six_div_icons_homepage_businessdetailpage .fa-instagram
+{
+    color: #d34242;
+}
+.six_div_icons_homepage_businessdetailpage .fa-youtube
+{
+    color: #FE0000;
+}
+ /* ========================================= Second Div Business Detail Page =================================  */
+.seconddiv_businessdetailpage
+{
+    width: 100%;
+    margin-top: 2%;
+}
+.sidepic_businessdetailpage
+{
+    position: relative;
+    width: 100%;
+    background: linear-gradient(108.92deg, rgba(20, 0, 255, 0.5508) 30.63%, rgba(255, 0, 214, 0.2312) 55.9%, rgba(216, 26, 247, 0.68) 76.14%);
+    flex-wrap: wrap;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    overflow: hidden;
+}
+.sidepic_businessdetailpage h1
+{
+    width: 100%;
+}
+
+.side1_pic_businessdetailpage
+{
+    
+    margin: 2%;
+    width: 300px;
+    height: 350px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0px 0px 20px 5px black;
+    border-radius: 15px;
+    overflow: hidden;  
+   
+    
+    
+}
+.side1_pic_businessdetailpage img 
+{
+    width: 100%;
+    height: 350px ;
+}
+ /* ========================================= Third Div Business Detail Page =================================  */
+.wright_review_businessdetailpage
+{
+    width: 100%;
+    display: flex;
+    margin-bottom: 5%;
+}
+.bigstar_businessdetailpage
+{
+    transform: scale(0.7);
+    width: 280px;
+    transition: 0.2s;
+}
+.bigstar_businessdetailpage img
+{
+    width: 120%;
+    height: 400px;
+}
+.star_button_baground_businessdetailpage
+{
+    transform: scale(0.5);
+    position: absolute;
+    top: 980px;
+    left: 120px;
+    width: 900px;
+    height: 900px;
+}
+.form_button_holder_businessdetailpage
+{
+    position: relative;
+    display: flex;
+    top: 22px;
+    left: 32px;
+}
+.form_button_holder_businessdetailpage button
+{
+    width: 60px;
+    height: 65px;
+    opacity: 0;
+    transition: 0.2s;
+}
+.write_review_businessdetailpage
+{
+    position: relative;
+    left: 8%;
+    top: 50px;
+    max-width: 190%;
+    max-height: 150px;
+    border-radius: 25px;
+    background-color: transparent;
+    border: 2px solid black;
+    box-shadow: 0px 0px 10px 0px black;
+    outline: none;
+}
+.textarea_businessdetailpage
+{
+    width: 300%;
+    height: 150px;
+    font-size: 32px;
+    margin-top: 20%;
+    margin-left: 35%;
+    resize: none;
+}
+.submit_review_businessdetailpage
+{
+    position: relative;
+    top: -30px;
+    left: 930px;
+    width: 100px;
+    height: 50px;
+    border-radius: 25px;
+    transition: 0.2s;
+}
+ /* ========================================= Four Div Business Detail Page =================================  */
+.fourthdiv_businessdetailpage
+{
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.fourthdiv_cardholder_businessdetailpage
+{
+    position: relative;
+    width: 90%;
+    background: linear-gradient(108.92deg, rgba(20, 0, 255, 0.5508) 30.63%, rgba(255, 0, 214, 0.2312) 55.9%, rgba(216, 26, 247, 0.68) 76.14%);
+    flex-wrap: wrap;
+    display: flex;
+    gap: 20px;
+    left: 5%;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.fourthdiv_card_businessdetailpage
+{
+    margin: 2%;
+    margin-top: 2%;
+    width: 250px;
+    height: 250px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0px 0px 20px 5px black;
+    border-radius: 50%;
+    overflow: hidden;  
+}
+.fourthdiv_card_businessdetailpage img
+{
+    width: 100%;
+    height: 350px ;  
+}
+.fourthdiv_review_businessdetailpage
+{
+    width: 77%;
+    font-size: 20px;
+    margin-top: 4%;
+    text-align: justify;
+}
+.fourthdiv_reviewstar_businessdetailpage
+{
+    position: absolute;
+    width: 20%;
+    height: 80%;
+    left: 80%;
+    top: -30%;
+}
+.fourthdiv_reviewstar_businessdetailpage img
+{
+    width: 100%;
+    height: 100%;
+}
+/* ======================================================== All Categories Page ========================================================= */
+.div_first_header_allcatecorigepage
+{
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    background-color:black;
+    margin-bottom: 5%;
+}
+.div_text_allcatecorigepage
+{
+    font-size: 50px;
+    margin: 1%;
+    position: absolute;
+    color:black;
+}
+.div_dummy_text_allcatecorigepage
+{
+    width: 70%;
+    padding-left: 25%;
+    padding-top: 5%;
+    font-size: large; 
+    position: absolute;
+    text-align: justify;
+    color:black;
+    border: 2%;
+    opacity: 15;
+    font-family:'Times New Roman', Times, serif ;
+}
+.div_img_allcatecorigepage
+{
+    width: 100%;
+    height: 600px;
+    background-color: rgb(8, 8, 8);
+    /* opacity:0.8; */
+}
+.card_allcatecorigepage
+{
+    
+    height: auto;
+    position: relative;
+    width: 90%;
+    left: 5%;
+    display: flex;
+    gap: 100px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card_holder_allcatecorigepage
+{
+    width: 250px;
+    height: 400px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0px 0px 20px 5px black;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-top: 2%;
+}
+.card_img_allcatecorigepage
+{
+    width: 100%;
+    height: 400px;
+    opacity: 0.4;
+}
+.card_text_allcatecorigepage
+{
+    position: relative;
+    top: -100px;
+    text-align: center;
+    color: aliceblue;
+    font-size: 30px;
+}
+.card_ratiing_allcatecorigepage
+{
+    position: relative;
+    top: -120%;
+    right: -7%;
+    text-align: right;
+    padding-right:10%;
+    color: white;
+    font-size: 30px;
+}
+.pass_allcatecorigepage
+{
+    position: relative;
+    top: -550px;
+    left: 160px;
+    width: 40px;
+    height: 40px;
+    opacity: 1;
+}
+.end_div_allcatecorigepage
+{
+    margin-top: 8%;
+    height: 70%;
+    width: 100%;
+}
+.end_div_allcatecorigepage img
+{
+    width: 100%;
+    height: 100%;
+}
+
+/* ================================================== validation proparties css class ======================================================= */
+
+
+.right
+{
+    color: black;
+    border-bottom: 1px solid rgb(82, 243, 93);
+}
+.wrong
+{
+    color: red;
+    border-bottom: 1px solid rgb(255, 0, 0);
+}
